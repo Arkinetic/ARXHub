@@ -6,4 +6,4 @@
 - Currently Supported Games:
 - Project Lazarus
 - Tapping Legends X
-```e```
+`e`
