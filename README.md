@@ -1,4 +1,4 @@
- ARX Hub
+# ARX Hub
 - UPDATE LOG:
 - Added Project Lazaurus
 - Added Tapping Legends X
