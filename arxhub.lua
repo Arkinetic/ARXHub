@@ -28,3 +28,6 @@ end
 if game.PlaceId == 155615604 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/DanPlayz23/ARXHubPRISONLYFE/main/arxhub.lua"))()
 end
+if game.PlaceId == 3956818381 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/DanPlayz23/ARXHubNJL/main/arxhub.lua"))()
+end
