@@ -3,8 +3,10 @@
 - Added Project Lazaurus (PATCHED)
 - Added Tapping Legends X
 - Added Prison Life
+- Added Ninja Legends
 ---
 - Currently Supported Games:
 - Project Lazarus (PATCHED)
 - Tapping Legends X
 - Prison Life
+- Ninja Legends
