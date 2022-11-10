@@ -141,3 +141,4 @@ local function QNPQTNF_fake_script() -- closebtn.LocalScript
 end
 coroutine.wrap(QNPQTNF_fake_script)()
 end
+return lib
