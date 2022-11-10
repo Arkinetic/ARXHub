@@ -2,8 +2,8 @@
 local lib = {}
 function lib:init(windowtitle)
 
-	if game.CoreGui:FindFirstChild("AnonymousLib") ~= nil then
-		game.CoreGui["AnonymousLib"]:Destroy()
+	if game.CoreGui:FindFirstChild("ARXLib") ~= nil then
+		game.CoreGui["ARXLib"]:Destroy()
 	end
 local ARXLib = Instance.new("ScreenGui")
 local Library = Instance.new("Frame")
@@ -19,14 +19,25 @@ local TabMenu = Instance.new("Frame")
 local ButtonHolder = Instance.new("Frame")
 local UIPadding = Instance.new("UIPadding")
 local UIListLayout = Instance.new("UIListLayout")
+function lib:tab(tabname)
 local Active = Instance.new("TextLabel")
+Active.Name = "Active"
+Active.Parent = ButtonHolder
+Active.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Active.BorderSizePixel = 0
+Active.Size = UDim2.new(0, 109, 0, 34)
+Active.Font = Enum.Font.SourceSans
+Active.Text = tabname
+Active.TextColor3 = Color3.fromRGB(255, 255, 255)
+Active.TextSize = 14.000
+end
 local UIPadding_2 = Instance.new("UIPadding")
 local Inactive = Instance.new("TextLabel")
 local UIPadding_3 = Instance.new("UIPadding")
 local Container = Instance.new("Frame")
 local ARXTab = Instance.new("Frame")
 ARXLib.Name = "ARXLib"
-ARXLib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ARXLib.Parent = game.CoreGui
 ARXLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Library.Name = "Library"
 Library.Parent = ARXLib
@@ -99,15 +110,6 @@ UIPadding.Parent = ButtonHolder
 UIListLayout.Parent = ButtonHolder
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 1)
-Active.Name = "Active"
-Active.Parent = ButtonHolder
-Active.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-Active.BorderSizePixel = 0
-Active.Size = UDim2.new(0, 109, 0, 34)
-Active.Font = Enum.Font.SourceSans
-Active.Text = "ARX"
-Active.TextColor3 = Color3.fromRGB(255, 255, 255)
-Active.TextSize = 14.000
 UIPadding_2.Parent = Active
 Inactive.Name = "Inactive"
 Inactive.Parent = ButtonHolder
