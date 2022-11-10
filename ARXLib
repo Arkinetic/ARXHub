@@ -1,2 +1,143 @@
-local version = 1.0
-print('Under Development!')
+
+local lib = {}
+function lib:init(windowtitle)
+
+	if game.CoreGui:FindFirstChild("AnonymousLib") ~= nil then
+		game.CoreGui["AnonymousLib"]:Destroy()
+	end
+local ARXLib = Instance.new("ScreenGui")
+local Library = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local topbar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local closebtn = Instance.new("ImageLabel")
+local windowtitle = Instance.new("TextLabel")
+local xtracontent = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local TabMenu = Instance.new("Frame")
+local ButtonHolder = Instance.new("Frame")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local Active = Instance.new("TextLabel")
+local UIPadding_2 = Instance.new("UIPadding")
+local Inactive = Instance.new("TextLabel")
+local UIPadding_3 = Instance.new("UIPadding")
+local Container = Instance.new("Frame")
+local ARXTab = Instance.new("Frame")
+ARXLib.Name = "ARXLib"
+ARXLib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ARXLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Library.Name = "Library"
+Library.Parent = ARXLib
+Library.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Library.BorderSizePixel = 0
+Library.Position = UDim2.new(0.365036219, 0, 0.334484696, 0)
+Library.Size = UDim2.new(0, 429, 0, 267)
+UICorner.Parent = Library
+topbar.Name = "topbar"
+topbar.Parent = Library
+topbar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+topbar.Size = UDim2.new(0, 429, 0, 24)
+UICorner_2.Parent = topbar
+closebtn.Name = "closebtn"
+closebtn.Parent = topbar
+closebtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+closebtn.BackgroundTransparency = 1.000
+closebtn.BorderSizePixel = 0
+closebtn.Position = UDim2.new(0.944055974, 0, -0.0369850099, 0)
+closebtn.Size = UDim2.new(0, 24, 0, 25)
+closebtn.Image = "rbxassetid://2777727756"
+windowtitle.Name = "windowtitle"
+windowtitle.Parent = topbar
+windowtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+windowtitle.BackgroundTransparency = 1.000
+windowtitle.Position = UDim2.new(-0.289044321, 0, -0.541666627, 0)
+windowtitle.Size = UDim2.new(0, 304, 0, 50)
+windowtitle.Font = Enum.Font.SourceSans
+windowtitle.Text = windowtitle
+windowtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+windowtitle.TextSize = 14.000
+xtracontent.Name = "xtracontent"
+xtracontent.Parent = topbar
+xtracontent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+xtracontent.BorderColor3 = Color3.fromRGB(53, 53, 53)
+xtracontent.Position = UDim2.new(0.00699300691, 0, 1, 0)
+xtracontent.Size = UDim2.new(0, 423, 0, 0)
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Library
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+TabMenu.Name = "TabMenu"
+TabMenu.Parent = Library
+TabMenu.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TabMenu.BorderSizePixel = 0
+TabMenu.Position = UDim2.new(0, 0, 0.119850188, 0)
+TabMenu.Size = UDim2.new(0, 109, 0, 235)
+ButtonHolder.Name = "ButtonHolder"
+ButtonHolder.Parent = TabMenu
+ButtonHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonHolder.BackgroundTransparency = 1.000
+ButtonHolder.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ButtonHolder.Size = UDim2.new(1, 0, 1, 0)
+UIPadding.Parent = ButtonHolder
+UIListLayout.Parent = ButtonHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 1)
+Active.Name = "Active"
+Active.Parent = ButtonHolder
+Active.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Active.BorderSizePixel = 0
+Active.Size = UDim2.new(0, 109, 0, 34)
+Active.Font = Enum.Font.SourceSans
+Active.Text = "ARX"
+Active.TextColor3 = Color3.fromRGB(255, 255, 255)
+Active.TextSize = 14.000
+UIPadding_2.Parent = Active
+Inactive.Name = "Inactive"
+Inactive.Parent = ButtonHolder
+Inactive.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Inactive.BackgroundTransparency = 0.800
+Inactive.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Inactive.BorderSizePixel = 0
+Inactive.Size = UDim2.new(0, 109, 0, 34)
+Inactive.Font = Enum.Font.SourceSans
+Inactive.Text = "inactiv"
+Inactive.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inactive.TextSize = 14.000
+UIPadding_3.Parent = Inactive
+Container.Name = "Container"
+Container.Parent = Library
+Container.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Container.BackgroundTransparency = 1.000
+Container.BorderSizePixel = 0
+Container.Position = UDim2.new(0.277389288, 0, 0.119850188, 0)
+Container.Size = UDim2.new(0, 300, 0, 228)
+ARXTab.Name = "ARXTab"
+ARXTab.Parent = Container
+ARXTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARXTab.BackgroundTransparency = 1.000
+ARXTab.Size = UDim2.new(0, 307, 0, 229)
+local function QNPQTNF_fake_script() -- closebtn.LocalScript 
+	local script = Instance.new('LocalScript', closebtn)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(QNPQTNF_fake_script)()
+end
