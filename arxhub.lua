@@ -12,12 +12,13 @@
                      @@@=      @@@@@@@-   @@@@@@%  -@@@@@@@=    =%@*   -@@@@@@@-                    
                   .:#@@@-      .%@@@@@%. .@@@@@:    :%@@@@@@@:*%%@@*    -%@@@%=. .                  
                    -==#=.       .-*##*-. :::-*:       :==###=.  :=:      .-##.  =.  
---] Created by Aristois#0297 ]]
+--] Created by Aristois#0297|ArkineticDev#7765 ]]
 --[[
    Developers:
-   Aristois#0297
-   SpacElectro7#8716
-   Craftz#3435 - (currently doing training lessons)
+   [Creator] Aristois#0297
+   [Creator] ArkineticDev#7765
+   [Friend] SpacElectro7#8716
+   [idiot] Craftz#3435
 --]]
 if game.PlaceId == 443406476 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/DanPlayz23/ARXHub_PL/main/arxhub.lua"))()
