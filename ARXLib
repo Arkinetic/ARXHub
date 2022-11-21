@@ -138,7 +138,7 @@ ARXTab.Size = UDim2.new(0, 307, 0, 229)
 local function QNPQTNF_fake_script() -- closebtn.LocalScript 
 	local script = Instance.new('LocalScript', closebtn)
 
-	print("Hello world!")
+	
 	
 end
 coroutine.wrap(QNPQTNF_fake_script)()
