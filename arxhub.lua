@@ -12,11 +12,11 @@
                      @@@=      @@@@@@@-   @@@@@@%  -@@@@@@@=    =%@*   -@@@@@@@-                    
                   .:#@@@-      .%@@@@@%. .@@@@@:    :%@@@@@@@:*%%@@*    -%@@@%=. .                  
                    -==#=.       .-*##*-. :::-*:       :==###=.  :=:      .-##.  =.  
---] Created by Aristois#0297|ArkineticDev#7765 ]]
+--] Created by Aristois#0297|Ark#7765 ]]
 --[[
    Developers:
    [Creator] Aristois#0297
-   [Creator] ArkineticDev#7765
+   [Creator] Ark#7765
    [Friend] SpacElectro7#8716
 --]]
 if game.PlaceId == 443406476 then
